@@ -1,0 +1,7 @@
+/coverage
+/dist
+/logs
+/node_modules
+/.next/
+.swc/
+.DS_Store
