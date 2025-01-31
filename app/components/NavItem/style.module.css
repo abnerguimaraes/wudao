@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  margin: 8px;
+}
+
+.active {
+  background-color: var(--bg-active);
+  color: var(--text-active);
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+  }
+
+}

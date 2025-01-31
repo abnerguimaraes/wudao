@@ -1,0 +1,24 @@
+.main {
+  align-items: center;
+  background-color: var(--foreground);
+  color: var(--background);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.menuLogo {
+  height: 42px;
+  margin: 0 8px;
+  width: 42px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+  }
+
+  .menuLogo {
+    display: none;
+  }
+}
