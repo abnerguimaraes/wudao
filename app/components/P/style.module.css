@@ -1,0 +1,13 @@
+.main {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 16px 0px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 8px 0;
+  }
+}

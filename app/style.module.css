@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  text-align: justify;
+  width: 100%;
+}
+
+.content {
+  max-width: 1042px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 16px;
+  }
+}

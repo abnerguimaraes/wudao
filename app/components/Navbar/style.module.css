@@ -7,18 +7,65 @@
   padding: 20px;
 }
 
+.menuButton {
+  display: none;
+}
+
+.activePage {
+  display: none;
+}
+
 .menuLogo {
   height: 42px;
   margin: 0 8px;
   width: 42px;
 }
 
+.menu {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .main {
+    align-items: center;
     display: flex;
+    justify-content: flex-start;
+  }
+
+  .menuButton {
+    align-items: center;
+    display: flex;
+    font-size: 32px;
+    height: 20px;
+    justify-content: center;
+    margin-bottom: 6px;
   }
 
   .menuLogo {
     display: none;
   }
+
+  .activePage {
+    display: flex;
+    margin: 0 8px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .open {
+    background: var(--foreground);
+    border-radius: 4px;
+    display: flex !important;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    top: 66px;
+  }
+
+  .closed {
+    display: none !important;
+  }
+
 }
