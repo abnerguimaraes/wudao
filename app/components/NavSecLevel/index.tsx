@@ -24,7 +24,7 @@ function NavSecLevel({ item, navigated }) {
 
   const setNavigated = () => {
     setIsOpen(false);
-    navigated(subItem);
+    navigated();
   }
 
   return (
@@ -40,7 +40,7 @@ function NavSecLevel({ item, navigated }) {
       {isOpen && (
         <button className={classes.subMenuCtn} onMouseDown={(e) => e.stopPropagation()}>
           {item.sub.map((subItem) => (
-            <NavItem key={subItem.name} item={subItem} navigated={() => setNavigated(subItem)}>{subItem.label}</NavItem>
+            <NavItem key={subItem.name} item={subItem} navigated={() => setNavigated()} />
           ))}
         </button>
       )}
