@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "wudao-kf",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
