@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { StoreProvider } from "./context/StoreContext";
 import { Montserrat } from "next/font/google";
 import "./styles/globals.css";
 import Navbar from "./components/Navbar";
@@ -21,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${MontSerratSans.variable} antialiased`}>
-        <Navbar />
-        <main>{children}</main>
+        <StoreProvider>
+          <Navbar />
+          <main>{children}</main>
+        </StoreProvider>
       </body>
     </html>
   );
