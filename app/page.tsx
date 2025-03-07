@@ -8,8 +8,9 @@ export default function Home() {
       <Title text={'História da Escola Wǔguǎn 武馆 Kung Fu Tradicional'}/>
       <P text='A Wǔguǎn 武馆 Kung Fu Tradicional nasceu de um sonho, um desejo profundo de preservar e 
               transmitir a essência do verdadeiro Kung Fu. Desde a infância, a paixão pelas artes marciais
-              chinesas e pelo legado milenar do Templo Shaolin serviu como inspiração para a criação de
-              uma escola que honrasse as tradições, a filosofia e os valores dessa arte.'
+              chinesas e pelo legado milenar do Templo Shaolin serviu como inspiração para que o mestre Fernando
+              pudesse seguir com a criação de uma escola que honrasse as tradições, a filosofia e os valores
+              dessa arte.'
       />
       <P text='Mais do que um espaço de treinamento, a Wǔguǎn 武馆 é um refúgio para aqueles que buscam 
               desenvolver não apenas a técnica, mas também o espírito e a disciplina que o Kung Fu ensina.

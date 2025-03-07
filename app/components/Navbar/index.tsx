@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useStore } from "../../context/StoreContext";
 import classes from "./style.module.css";
 import routes from "./routes";
-import menuLogo from "@/public/menuimg.jpeg";
+import menuLogo from "@/public/logo.png";
 import NavItem from "../NavItem";
 import NavSecLevel from "../NavSecLevel";
 
@@ -31,7 +31,22 @@ function Navbar() {
 
   useEffect(() => {
     if (pathname && state.activeRoute !== pathname) {
-      dispatch({ type: "SET_ROUTE", payload: pathname });
+      let label = '';
+      routes.forEach((route) => {
+        if (route.path?.replaceAll('/', '') === pathname.replaceAll('/', '')) {
+          label = route.label;
+        }
+
+        if (route?.sub?.length !== undefined) {
+          route.sub.forEach((sub) => {
+            if (sub.path?.replaceAll('/', '') === pathname.replaceAll('/', '')) {
+              label = sub.label;
+            }
+          });
+        }
+      });
+
+      dispatch({ type: "SET_ROUTE", payload: label });
     }
   }, [pathname, dispatch, state.activeRoute]);
 
@@ -41,7 +56,7 @@ function Navbar() {
         ☰
       </button>
       <span className={classes.activePage}>
-        {routes.find((r) => `${r.path}/` === state.activeRoute)?.label || "Página desconhecida"}
+        { state.activeRoute || "Página desconhecida"}
       </span>
       <Image className={classes.menuLogo} alt="logo" src={menuLogo} />
       <div className={`${classes.menu} ${isOpen ? classes.open : classes.closed}`}>
@@ -49,7 +64,7 @@ function Navbar() {
           item?.path ? (
             <NavItem key={item.name} item={item} navigated={() => setIsOpen(false)} />
           ) : (
-            <NavSecLevel key={item.name} item={item} navigated={() => {}} />
+            <NavSecLevel key={item.name} item={item} navigated={() => {setIsOpen(false)}} />
           )
         )}
       </div>

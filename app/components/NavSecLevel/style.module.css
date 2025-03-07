@@ -17,6 +17,11 @@
   display: flex;
 }
 
+.labelActive {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
 .subMenuCtn {
   background: var(--foreground);
   border-radius: 0 0 4px 4px;

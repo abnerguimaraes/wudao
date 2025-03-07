@@ -10,8 +10,8 @@ const MontSerratSans = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Wu Dao - Tradicional Kung Fu",
-  description: "Created by Abner Guimarães",
+  title: "Wu Dao",
+  description: "Tradicional Kung Fu",
 };
 
 export default function RootLayout({

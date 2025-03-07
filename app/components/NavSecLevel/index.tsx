@@ -1,13 +1,17 @@
 import NavItem from '../NavItem';
 import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
+import { useStore } from "../../context/StoreContext";
 import classes from './style.module.css';
 
 function NavSecLevel({ item, navigated }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [childActive, setChildActive] = useState(false);
   const secRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const isActive = item.sub.some(item => pathname === item.path);
+
+  const { state, dispatch } = useStore();
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -22,6 +26,16 @@ function NavSecLevel({ item, navigated }) {
     };
   }, []);
 
+  useEffect(() => {
+    setChildActive(false);
+    item.sub.forEach((sub) => {
+      if (sub.path?.replaceAll('/', '') === pathname.replaceAll('/', '')) {
+        setChildActive(true);
+      }
+    });
+
+  }, [dispatch, state.activeRoute]);
+
   const setNavigated = () => {
     setIsOpen(false);
     navigated();
@@ -33,7 +47,7 @@ function NavSecLevel({ item, navigated }) {
         type="button"
         onMouseDown={() => setIsOpen(!isOpen)}
         onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setIsOpen(!isOpen)}
-        className={classes.label}
+        className={childActive ? `${classes.label} ${classes.labelActive}` : classes.label}
       >
         {item.label}
       </button>

@@ -7,7 +7,7 @@ import classes from './style.module.css';
 
 function NavItem({ item, navigated }) {
   const pathname = usePathname();
-  const isActive = pathname === item.path;
+  const isActive = pathname.replaceAll('/', '') === item.path.replaceAll('/', '');
 
   return (
     <Link 
