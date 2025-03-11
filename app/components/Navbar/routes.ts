@@ -1,13 +1,13 @@
 const routes = [{
-  path: '/',
+  path: '#home',
   label: 'Home',
   name: '/',
 }, {
-  path: '/localizacao',
+  path: '#localizacao',
   label: 'Localização',
   name: '/localizacao',
 }, {
-  path: '/horarios',
+  path: '#horarios',
   label: 'Horários',
   name: '/horarios',
 }, {
@@ -15,20 +15,20 @@ const routes = [{
   label: 'Estilos',
   name: '/styles',
   sub: [{
-    path: '/mantis',
+    path: '#mantis',
     label: 'Louva a Deus',
     name: '/mantis',
   },{
-    path: '/monkey',
+    path: '#monkey',
     label: 'Macaco de Ferro',
     name: '/money',
   }]
 }, {
-  path: '/photos',
+  path: '#photos',
   label: 'Fotos',
   name: '/photos',
 }, {
-  path: '/contato',
+  path: '#contato',
   label: 'Contato',
   name: '/contato',
 }];

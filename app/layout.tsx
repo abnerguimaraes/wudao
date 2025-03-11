@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { StoreProvider } from "./context/StoreContext";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Oswald } from "next/font/google";
 import "./styles/globals.css";
 import Navbar from "./components/Navbar";
 
 const MontSerratSans = Montserrat({
   variable: "--font-montserrat-sans",
+  subsets: ["latin"],
+});
+
+const OswaldSans = Oswald({
+  variable: "--font-oswald-sans",
   subsets: ["latin"],
 });
 
@@ -21,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${MontSerratSans.variable} antialiased`}>
+      <body className={`${MontSerratSans.variable} ${OswaldSans.variable} antialiased`}>
         <StoreProvider>
           <Navbar />
           <main>{children}</main>

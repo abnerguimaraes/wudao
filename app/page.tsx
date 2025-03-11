@@ -1,10 +1,16 @@
+import classes from './style.module.css';
+import Cover from './components/Cover';
+
 import Title from '@/app/components/Title';
 import P from './components/P';
-import classes from './style.module.css';
 
 export default function Home() {
   return (<section className={classes.main}>
     <div className={classes.content}>
+      <section id="home" data-section="home">
+        <Cover />
+      </section>
+      
       <Title text={'História da Escola Wǔguǎn 武馆 Kung Fu Tradicional'}/>
       <P text='A Wǔguǎn 武馆 Kung Fu Tradicional nasceu de um sonho, um desejo profundo de preservar e 
               transmitir a essência do verdadeiro Kung Fu. Desde a infância, a paixão pelas artes marciais
@@ -27,10 +33,61 @@ export default function Home() {
       <P text='Seja você um praticante iniciante ou experiente, nossa escola está aberta para todos que 
               desejam trilhar esse caminho com dedicação, respeito e perseverança.'
       />
-      
+
       <P text='Bem-vindos à Wǔguǎn 武馆 Kung Fu Tradicional, onde tradição, técnica e cultura se unem para
               formar verdadeiros artistas marciais.'
       />
+
+<P text='Mais do que um espaço de treinamento, a Wǔguǎn 武馆 é um refúgio para aqueles que buscam 
+              desenvolver não apenas a técnica, mas também o espírito e a disciplina que o Kung Fu ensina.
+              Nossa escola se dedica ao ensino das técnicas tradicionais do Kung Fu, abrangendo estilos 
+              internos e externos, além do domínio de armas clássicas chinesas, defesa pessoal, condicionamento
+              físico e alongamento.'
+      />
+            <P text='Mais do que um espaço de treinamento, a Wǔguǎn 武馆 é um refúgio para aqueles que buscam 
+              desenvolver não apenas a técnica, mas também o espírito e a disciplina que o Kung Fu ensina.
+              Nossa escola se dedica ao ensino das técnicas tradicionais do Kung Fu, abrangendo estilos 
+              internos e externos, além do domínio de armas clássicas chinesas, defesa pessoal, condicionamento
+              físico e alongamento.'
+      />
+            <P text='Mais do que um espaço de treinamento, a Wǔguǎn 武馆 é um refúgio para aqueles que buscam 
+              desenvolver não apenas a técnica, mas também o espírito e a disciplina que o Kung Fu ensina.
+              Nossa escola se dedica ao ensino das técnicas tradicionais do Kung Fu, abrangendo estilos 
+              internos e externos, além do domínio de armas clássicas chinesas, defesa pessoal, condicionamento
+              físico e alongamento.'
+      />
+            <P text='Mais do que um espaço de treinamento, a Wǔguǎn 武馆 é um refúgio para aqueles que buscam 
+              desenvolver não apenas a técnica, mas também o espírito e a disciplina que o Kung Fu ensina.
+              Nossa escola se dedica ao ensino das técnicas tradicionais do Kung Fu, abrangendo estilos 
+              internos e externos, além do domínio de armas clássicas chinesas, defesa pessoal, condicionamento
+              físico e alongamento.'
+      />
+
+
+      <section id="localizacao" data-section="localizacao">
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+        <P text='TESTETETSTETTETEUGV  GIOUSLZ VHIS HVIOS VHS IDOIS DKG'/>
+      </section>
     </div>
   </section>);
 }

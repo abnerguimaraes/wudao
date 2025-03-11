@@ -1,0 +1,19 @@
+.main {
+  align-items: center;
+  display: flex;
+  height: 640px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.image {
+  display: flex;
+  height: 461px;
+  width: 396px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+  }
+}
