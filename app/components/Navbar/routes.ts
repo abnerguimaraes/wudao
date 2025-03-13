@@ -15,13 +15,15 @@ const routes = [{
   label: 'Estilos',
   name: '/styles',
   sub: [{
-    path: '#mantis',
+    path: '#styles',
     label: 'Louva a Deus',
     name: '/mantis',
+    parent: 'Estilos',
   },{
-    path: '#monkey',
+    path: '#styles',
     label: 'Macaco de Ferro',
     name: '/money',
+    parent: 'Estilos',
   }]
 }, {
   path: '#photos',

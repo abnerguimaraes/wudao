@@ -1,5 +1,6 @@
 .main {
   align-items: center;
+  background: rgba(130, 130, 130);
   display: flex;
   height: 640px;
   justify-content: flex-end;
@@ -9,11 +10,22 @@
 .image {
   display: flex;
   height: 461px;
+  margin: 0 80px 0 0;
   width: 396px;
 }
 
 @media (max-width: 768px) {
   .main {
+    align-items: center;
     display: flex;
+    height: 450px;
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
+
+  .image {
+    display: flex;
+    height: 300px;
+    width: auto;
   }
 }

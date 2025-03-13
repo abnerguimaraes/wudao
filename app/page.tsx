@@ -1,5 +1,6 @@
 import classes from './style.module.css';
 import Cover from './components/Cover';
+import Estilos from './components/Estilos';
 
 import Title from '@/app/components/Title';
 import P from './components/P';
@@ -10,7 +11,9 @@ export default function Home() {
       <section id="home" data-section="home">
         <Cover />
       </section>
-      
+      <section id="styles" data-section="styles">
+        <Estilos />
+      </section>
       <Title text={'História da Escola Wǔguǎn 武馆 Kung Fu Tradicional'}/>
       <P text='A Wǔguǎn 武馆 Kung Fu Tradicional nasceu de um sonho, um desejo profundo de preservar e 
               transmitir a essência do verdadeiro Kung Fu. Desde a infância, a paixão pelas artes marciais

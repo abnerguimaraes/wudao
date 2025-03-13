@@ -1,0 +1,43 @@
+.main {
+  align-items: center;
+  background: var(--foreground);
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  align-self: flex-start;
+  height: 110px;
+  margin: 80px 0 24px 80px;
+}
+
+.imgContentCtn {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+}
+
+.imgLogoPB {
+  height: 487px;
+  width: 320px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+  }
+
+  .image {
+    height: 80px;
+    margin: 80px 16px 0;
+    width: fit-content;
+  }
+
+  .imgContentCtn {
+    width: 100%;
+  }
+
+  .imgLogoPB {
+    display: none;
+  }
+}

@@ -50,7 +50,10 @@ function Navbar() {
         const visibleSection = entries.find((entry) => entry.isIntersecting);
         if (visibleSection) {
           const activeId = visibleSection.target.getAttribute("data-section");
-          const activeRoute = routes.find((r) => r.path === `#${activeId}`)?.label || "Página desconhecida";
+          const activeRoute =
+          routes.find((r) => r.path === `#${activeId}`)?.label ||
+          routes.flatMap((r) => r.sub || []).find((s) => s.path === `#${activeId}`)?.parent ||
+          "Página desconhecida";        
 
           dispatch({ type: "SET_ROUTE", payload: activeRoute });
         }

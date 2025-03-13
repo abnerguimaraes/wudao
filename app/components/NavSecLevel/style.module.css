@@ -29,11 +29,12 @@
 .subMenuCtn {
   background: var(--foreground);
   border-radius: 0 0 4px 4px;
+  color: var(--background);
   display: flex;
   flex-direction: column;
   left: 0;
   position: absolute;
-  top: 32px;
+  top: 40px;
   width: 200px;
 }
 

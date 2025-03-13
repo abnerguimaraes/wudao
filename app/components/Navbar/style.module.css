@@ -5,7 +5,7 @@
   display: flex;
   height: 72px;
   justify-content: flex-start;
-  margin: 0 0 0 64px;
+  /* margin: 0 0 0 64px; */
   position: fixed;
   width: 100%;
 }
@@ -20,6 +20,7 @@
 
 .menu {
   display: flex;
+  margin: 0 80px;
 }
 
 @media (max-width: 768px) {
@@ -28,7 +29,7 @@
     display: flex;
     height: 64px;
     justify-content: flex-start;
-    margin: 0 16px;
+    margin: 0;
   }
 
   .menuButton {
@@ -37,7 +38,7 @@
     font-size: 32px;
     height: 20px;
     justify-content: center;
-    margin-bottom: 6px;
+    margin: 0 0 6px 16px;
   }
 
   .menuLogo {
@@ -51,6 +52,7 @@
 
   .menu {
     display: flex;
+    margin: 0;
   }
 
   .open {
