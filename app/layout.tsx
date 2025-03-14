@@ -27,10 +27,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${MontSerratSans.variable} ${OswaldSans.variable} antialiased`}>
-        <StoreProvider>
-          <Navbar />
-          <main>{children}</main>
-        </StoreProvider>
+        <section style={{ display: 'flex', justifyContent: 'center' }}>
+          <StoreProvider>
+            <Navbar />
+            <main>{children}</main>
+          </StoreProvider>
+        </section>
       </body>
     </html>
   );

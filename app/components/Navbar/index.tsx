@@ -29,7 +29,7 @@ function Navbar() {
   useEffect(() => {
     const handleHashChange = () => {
       const currentHash = window.location.hash || "#home";
-      const label = routes.find((route) => route.path === currentHash)?.label || "Página desconhecida";
+      const label = routes.find((route) => route.path === currentHash)?.label || "Estilos";
 
       dispatch({ type: "SET_ROUTE", payload: label });
     };
@@ -53,7 +53,7 @@ function Navbar() {
           const activeRoute =
           routes.find((r) => r.path === `#${activeId}`)?.label ||
           routes.flatMap((r) => r.sub || []).find((s) => s.path === `#${activeId}`)?.parent ||
-          "Página desconhecida";        
+          "Estilos";        
 
           dispatch({ type: "SET_ROUTE", payload: activeRoute });
         }
@@ -72,7 +72,7 @@ function Navbar() {
         ☰
       </button>
       <span className={classes.activePage}>
-        {state.activeRoute || "Página desconhecida"}
+        {state.activeRoute || "Estilos"}
       </span>
       <div className={`${classes.menu} ${isOpen ? classes.open : classes.closed}`}>
         {routes.map((item) =>

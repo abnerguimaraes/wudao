@@ -1,13 +1,14 @@
 .main {
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-family: var(--font-montserrat-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 141%;
   margin: 0 auto;
-  text-align: justify;
-  padding: 16px 0px;
 }
 
 @media (max-width: 768px) {
   .main {
+    font-size: 14px;
     padding: 8px 0;
   }
 }

@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useContext, useReducer, ReactNode } from "react";
+import { createContext, useContext, useReducer, ReactNode, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 type State = {
@@ -32,6 +32,10 @@ function reducer(state: State, action: Action): State {
 export function StoreProvider({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const [state, dispatch] = useReducer(reducer, { ...initialState, activeRoute: pathname });
+
+  useEffect(() => {
+    dispatch({ type: "SET_ROUTE", payload: pathname });
+  }, [pathname]);
 
   return <StoreContext.Provider value={{ state, dispatch }}>{children}</StoreContext.Provider>;
 }

@@ -11,9 +11,10 @@
   :root {
     --background: #3E3E3E;
     --foreground: #E4E4E4;
-    --text-active: rgb(255, 134, 121);
+    --text-active: #8C1F1F;
     --inactive: grey;
-    --bg-active: rgba(52,110,36,1);
+    --bg-active: #A8BFA4;
+    --text: #3E3E3E;
   }
 }
 
