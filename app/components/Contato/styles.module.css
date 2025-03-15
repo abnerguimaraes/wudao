@@ -1,0 +1,32 @@
+.main {
+  background: var(--foreground);
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+.titleDesk {
+  display: flex;
+}
+
+.titleMobile {
+  display: none;   
+}
+
+.contentCtn {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+  }
+
+  .titleDesk {
+    display: none;
+  }
+
+  .titleMobile {
+    display: flex;
+  }
+}

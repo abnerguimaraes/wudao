@@ -54,8 +54,10 @@
   }
 
   .menu {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 10px 0px;
     display: flex;
     margin: 0;
+    width: 180px;
   }
 
   .open {
@@ -66,7 +68,7 @@
     flex-direction: column;
     left: 0;
     position: absolute;
-    top: 66px;
+    top: 64px;
   }
 
   .closed {

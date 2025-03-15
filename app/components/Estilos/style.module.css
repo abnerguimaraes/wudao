@@ -6,12 +6,6 @@
   padding-bottom: 80px;
 }
 
-.image {
-  align-self: flex-start;
-  height: 110px;
-  margin: 80px 0 24px 80px;
-}
-
 .imgContentCtn {
   align-items: center;
   display: flex;
@@ -71,12 +65,6 @@
 @media (max-width: 768px) {
   .main {
     display: flex;
-  }
-
-  .image {
-    height: 80px;
-    margin: 80px 16px 0;
-    width: fit-content;
   }
 
   .imgContentCtn {

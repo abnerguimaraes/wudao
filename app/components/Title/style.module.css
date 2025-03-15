@@ -1,14 +1,39 @@
 .main {
-  display: block;
-  text-align: center;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: bold;
-  margin-bottom: 1rem;
+  color: var(--text-active);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-oswald-sans);
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  line-height: 141%;
+  margin: 80px 0 24px 80px;
   width: 100%;
+}
+
+.alt {
+  color: var(--foreground)
+}
+
+.contornoImg {
+  height: 5px;
+  width: 109px;
+}
+
+.text {
+  margin: 16px 0;
 }
 
 @media (max-width: 768px) {
   .main {
     display: flex;
+    font-size: 40px;
+    margin: 80px 16px 0;
+    width: calc(100% - 32px);
   }
+
+
+.text {
+  margin: 8px 0;
+}
 }

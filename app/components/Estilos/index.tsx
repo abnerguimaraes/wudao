@@ -4,12 +4,11 @@ import { useState, useEffect } from "react";
 import { useStore } from "../../context/StoreContext";
 
 import classes from './style.module.css';
-import estilos from '@/public/estilos.png';
 import logoPB from '@/public/logoBW.png';
 import routes from "../Navbar/routes";
 
+import Title from "../Title";
 import P from '../P';
-
 import Image from "next/image";
 
 function Estilos() {
@@ -38,7 +37,7 @@ function Estilos() {
 
   return (
     <div className={classes.main}>
-      <Image className={classes.image} src={estilos} alt="estilos" />
+      <Title text="ESTILOS" />
       <div className={classes.imgContentCtn}>
         <Image className={classes.imgLogoPB} src={logoPB} alt="logo preto e branco" />
         <div className={classes.navContentCtn}>

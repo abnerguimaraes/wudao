@@ -1,6 +1,6 @@
 const routes = [{
-  path: '#home',
-  label: 'Home',
+  path: '#inicio',
+  label: 'Início',
   name: '/',
 }, {
   path: '#localizacao',

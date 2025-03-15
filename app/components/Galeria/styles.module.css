@@ -1,0 +1,23 @@
+.main {
+  background: var(--background);
+  display: flex;
+  min-height: 934px;
+}
+
+.title {
+  height: 110px;
+  margin: 80px 0 24px 80px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .main {
+    min-height: 981px;
+  }
+
+  .title {
+    height: 85px;
+    margin: 80px 0 24px 16px;
+    width: auto;
+  }
+}
