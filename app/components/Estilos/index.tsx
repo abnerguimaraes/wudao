@@ -21,8 +21,7 @@ function Estilos() {
       const currentHash = window.location.hash || '#mantis';
       const label = routes.find((route) => route.path === currentHash)?.label || "Louva a Deus"
       setEstilo(currentHash);
-      dispatch({ type: "SET_ROUTE", payload: label });
-      console.log('rodou' + label)
+      dispatch({ type: "SET_ROUTE", payload: label });      
     };
     updateEstiloFromHash();
 

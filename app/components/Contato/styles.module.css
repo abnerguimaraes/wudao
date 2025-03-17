@@ -15,11 +15,94 @@
 
 .contentCtn {
   display: flex;
+  justify-content: center;
+  margin: 0 32px 32px;
+  width: 100%;
+}
+
+.navigation {
+  display: none;
+}
+
+.itemContent {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 16px;
+  width: 290px;
+}
+
+.space {
+  margin: 16px 0;
+}
+
+.iconsCtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconItem {
+  cursor: pointer;
+  height: 24px;
+  margin: 0 16px;
+  width: 24px;
+}
+
+.h2 {
+  font-family: var(--font-oswald-sans);
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.h3 {
+  font-family: var(--font-oswald-sans);
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.mobShow {
+  display: flex;
+}
+
+.mobHide {
+  display: flex;
 }
 
 @media (max-width: 768px) {
   .main {
     display: flex;
+    padding: 0 0 16px 0;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    margin: 16px;
+  }
+
+  .navigationItem {
+    color: var(--text-active);
+    font-family: var(--font-oswald-sans);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 8px;
+  }
+
+  .navigationItem:first-child{
+    margin: 0 8px 0 0;
+  }
+
+  .active {
+    background-color: var(--bg-active);
+    text-decoration: underline;
+    text-decoration-color: var(--text-active);
+  }
+
+  .contentCtn {
+    justify-content: flex-start;
+    margin: 16px 0 0 0px;
   }
 
   .titleDesk {
@@ -28,5 +111,13 @@
 
   .titleMobile {
     display: flex;
+  }
+
+  .mobShow {
+    display: flex;
+  }
+  
+  .mobHide {
+    display: none !important;
   }
 }
