@@ -11,6 +11,37 @@
   width: 100%;
 }
 
+.hrCtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.hrRed {
+  background: var(--text-active);
+  border: 0;
+  display: flex;
+  height: 5px;
+  width: 80px;
+}
+
+.hrGreen {
+  background: var(--background);
+  border: 0;
+  display: flex;
+  height: 5px;
+  margin-left: 4px;
+  width: 20px;
+}
+
+.altHrGreen {
+  background: var(--white);
+  border: 0;
+  display: flex;
+  height: 5px;
+  margin-left: 4px;
+  width: 20px;
+}
+
 .alt {
   color: var(--foreground)
 }

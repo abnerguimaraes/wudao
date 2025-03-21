@@ -1,6 +1,6 @@
 .main {
   align-items: center;
-  background: rgba(130, 130, 130);
+  background: var(--background-sec);
   display: flex;
   height: 640px;
   justify-content: flex-end;

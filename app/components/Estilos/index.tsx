@@ -36,7 +36,9 @@ function Estilos() {
 
   return (
     <div className={classes.main}>
-      <Title text="ESTILOS" />
+      <div className={classes.title}>
+        <Title text="ESTILOS" />
+      </div>
       <div className={classes.imgContentCtn}>
         <Image className={classes.imgLogoPB} src={logoPB} alt="logo preto e branco" />
         <div className={classes.navContentCtn}>

@@ -6,6 +6,11 @@
   padding-bottom: 80px;
 }
 
+.title {
+  align-self: flex-start;
+  display: flex;
+}
+
 .imgContentCtn {
   align-items: center;
   display: flex;
@@ -14,7 +19,7 @@
 }
 
 .imgLogoPB {
-  height: 487px;
+  height: auto;
   width: 320px;
 }
 

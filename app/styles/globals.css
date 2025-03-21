@@ -10,11 +10,15 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #3E3E3E;
+    --background-sec: rgba(130,130,130,1);
     --foreground: #E4E4E4;
-    --text-active: #8C1F1F;
+    /* --text-active: #8C1F1F; */
+    --text-active: #E62634;
     --inactive: grey;
     --bg-active: #A8BFA4;
     --text: #3E3E3E;
+    --green: #387336;
+    --white: #E4E4E4;
   }
 }
 

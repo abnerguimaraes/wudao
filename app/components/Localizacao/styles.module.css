@@ -1,0 +1,22 @@
+.mainMap {
+  border: 0;
+  height: 700px;
+}
+
+.mainMap {
+  padding: 0 80px 80px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+  }
+
+  .mainMap {
+    padding: 16px;
+    height: 800px;
+  }
+}

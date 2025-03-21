@@ -4,6 +4,7 @@ import Estilos from './components/Estilos';
 import Galeria from './components/Galeria';
 import Contato from './components/Contato';
 import Localizacao from './components/Localizacao';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (<section className={classes.main}>
@@ -24,7 +25,7 @@ export default function Home() {
         <Localizacao />
       </section>
       <section>
-        footer
+        <Footer />
       </section>  
     </div>
   </section>);
