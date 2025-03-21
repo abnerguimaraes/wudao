@@ -7,7 +7,7 @@ const routes = [{
   label: 'Localização',
   name: '/localizacao',
 }, {
-  path: '#horarios',
+  path: '#contato',
   label: 'Horários',
   name: '/horarios',
 }, {
