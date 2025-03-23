@@ -2,15 +2,7 @@ const routes = [{
   path: '#inicio',
   label: 'Início',
   name: '/',
-}, {
-  path: '#localizacao',
-  label: 'Localização',
-  name: '/localizacao',
-}, {
-  path: '#contato',
-  label: 'Horários',
-  name: '/horarios',
-}, {
+},{
   path: null,
   label: 'Estilos',
   name: '/styles',
@@ -24,15 +16,44 @@ const routes = [{
     label: 'Macaco de Ferro',
     name: '/monkey',
     parent: 'Estilos',
+  },{
+    path: '#north',
+    label: 'Shaolin do Norte',
+    name: '/north',
+    parent: 'Estilos',
   }]
 }, {
   path: '#photos',
   label: 'Fotos',
   name: '/photos',
+},{
+  path: null,
+  label: 'Mestres',
+  name: '/mestres',
+  sub: [{
+    path: '#fernando',
+    label: 'Shifu Fernando',
+    name: '/fernando',
+    parent: 'Mestres',
+  }, {
+    path: '#melo',
+    label: 'Luis Mello',
+    name: '/melo',
+    parent: 'Mestres',
+  }, {
+    path: '#cefas',
+    label: 'Roberto Cefas',
+    name: '/cefas',
+    parent: 'Mestres',
+  }],
 }, {
   path: '#contato',
-  label: 'Contato',
-  name: '/contato',
+  label: 'Horários',
+  name: '/horarios',
+}, {
+  path: '#localizacao',
+  label: 'Localização',
+  name: '/localizacao',
 }];
 
 export default routes;

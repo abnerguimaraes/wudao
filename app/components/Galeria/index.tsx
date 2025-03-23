@@ -25,7 +25,9 @@ function Galeria() {
 
   return (
     <div className={classes.main}>
-      <Title text="GALERIA DE FOTOS" altColor={true} />
+      <div className={classes.title}>
+        <Title text="GALERIA DE FOTOS" altColor={true} />
+      </div>
       <div className={classes.fotoContainer}>
         {fotos.map((foto, index) => (
           <div key={index} className={classes.fotoItem}>

@@ -45,7 +45,7 @@ function Estilos() {
           <div className={classes.navTitle}>
             <span
               id="mantis" data-section="mantis"
-              className={`${classes.navItem} ${estilo !== "#monkey" ? classes.active : ""}`}
+              className={`${classes.navItem} ${estilo !== "#monkey" && estilo !== '#north' ? classes.active : ""}`}
               onClick={() => setEstilo("#mantis")}
             >
               Louva Deus
@@ -57,8 +57,15 @@ function Estilos() {
             >
               Macaco de Ferro
             </span>
+            <span
+              id="north" data-section="north"
+              className={`${classes.navItem} ${estilo === "#north" ? classes.active : ""}`}
+              onClick={() => setEstilo("#north")}
+            >
+              Shaolin do Norte
+            </span>
           </div>
-          {estilo !== '#monkey' && <div className={classes.contentTitle}>
+          {estilo !== '#monkey' && estilo !== '#north' && <div className={classes.contentTitle}>
             <span className={classes.title}>O estilo Louva-a-Deus e Wang Lang</span>
             <P 
               text="O Kung Fu do Louva-a-Deus (Tang Lang Quan, 螳螂拳) é um dos estilos
@@ -120,6 +127,23 @@ function Estilos() {
               e cinco armas diferentes. Cada tipo de arma tem em sua aplicação a grande utilização de técnicas de
               mãos com conceitos próprios do macaco, o que aumenta a riqueza do sistema."
             />
+          </div>}
+          {estilo == '#north' && <div className={classes.contentTitle}>
+            <span className={classes.title}>Shaoolin do Norte</span>
+            <P 
+              text="O Shaolin do Norte (Bei Shaolin Quan, 北少林拳) é um dos sistemas mais antigos e influentes do Kung Fu,
+              carregando o legado dos monges guerreiros do Templo Shaolin."
+            />
+            <P 
+              text="Esse estilo é caracterizado por suas posturas alongadas, técnicas explosivas e grande variedade de chutes
+              e saltos acrobáticos. O Shaolin do Norte prioriza a fluidez dos movimentos e o uso da energia interna, combinando
+              defesa e ataque de maneira harmoniosa."
+            />
+            <P
+              text="Na Wǔguǎn 武馆 Kung Fu Tradicional, respeitamos e valorizamos esses estilos, transmitindo seus ensinamentos
+              com dedicação e fidelidade às suas origens. Se você busca aprimorar suas habilidades marciais e conhecer a verdadeira
+              essência do Kung Fu, venha treinar conosco!"
+            />            
           </div>}
         </div>
       </div>
